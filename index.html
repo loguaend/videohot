@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Video Player</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-blur::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(5px);
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+  <!-- Background -->
+  <div class="absolute inset-0 z-[-2]">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfOUTrHRaI-7YhAp1MTXPNbx0F82HIacq4mPdMabe6i_x2qfeYJBYVxMJmNQksrKU_EcKzxPFaV5_nAMHiyIo6UxaimYLsHTZW-8ezk0ZP3XigWN4HaDzBwkJWOZwRX2EI0v69nd2kbSZ2fxcuEBLgdCDCyZ70nW2gnOCAvbxrSgEnWA5D3BxLXkMi2zja/s320/487317513_693353786362216_4823776347659800_n.jpg" 
+         alt="Background Wanita Cantik"
+         class="w-full h-full object-cover"/>
+    <div class="bg-blur absolute inset-0"></div>
+  </div>
+
+  <!-- Video Card -->
+  <div class="z-10 p-6 bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl shadow-2xl max-w-md w-full">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-K_q46e6CkdFVV1Y9bRo_wsXTfKDs_E61g41Rra6RxMedczENzuVLKWO1kYDxAZH8tIVUxUtODrXyJ-NCP8aJt4dm8Z8Klk24WkeGBsn1kAm87x-9EMQQMUiDl5szPILRURCAqHtNgQ_I0QTd9vTh_V7HsQHIyH7oZcqcAT5hvbVkBW_nYgP9EzAmxpMi/w266-h138/20250331_163925.png"
+    <video id="videoPlayer" class="w-full rounded-xl mb-4" controls poster="https://via.placeholder.com/640x360.png?text=Preview+Video">
+      <source src="video-short.mp4" type="video/mp4">
+    
+    </video>
+
+    <!-- Buttons -->
+    <a href="https://www.profitableratecpm.com/e3nnyxig?key=3ee75b9327425fd5d36be64a6836835c" play
+    <div class="flex justify-between space-x-4">
+      <button onclick="document.getElementById('videoPlayer').play()" 
+              class="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-xl shadow-md transition">
+        ▶️ Play
+      
